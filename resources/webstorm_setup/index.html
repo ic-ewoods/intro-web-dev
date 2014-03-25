@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>CompSci 105: WebStorm Project Setup</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery.min.js"></script>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+    <script src="https://netdna.bootstrapcdn.com/bootstrap/latest/js/bootstrap.min.js"></script>
+
+    <!-- HTML5 Shim and Respond.js IE6 - IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <style>
+        dl dt:not(:first-child) {
+            margin-top: 1em;
+        }
+        li img,
+        li pre {
+            margin: 5px;
+        }
+        li pre {
+            padding-left: 3em;
+        }
+    </style>
+</head>
+<body>
+<div id="page" class="container">
+
+    <h1>WebStorm Project Setup</h1>
+
+    <p>These instructions will assist you in configuring WebStorm for use in Comp105. We have a classroom license for the software and have created a simplified configuration specifically for Comp105.</p>
+
+
+    <h2>Download Resources</h2>
+    <dl class="well">
+        <dt><span class="glyphicon glyphicon-download"></span> Download WebStorm</dt>
+        <dd><a href="http://www.jetbrains.com/webstorm/" target="_blank">Get WebStorm 7</a></dd>
+        <dt><span class="glyphicon glyphicon-download"></span> Download Comp105 WebStorm Settings</dt>
+        <dd><a href="webstorm_settings.jar">webstorm_settings.jar</a></dd>
+        <dd><a href="disabled_plugins.txt">disabled_plugins.txt</a></dd>
+    </dl>
+
+
+    <h2>Install WebStorm and Register</h2>
+    <ol>
+        <li>Run the Installation Wizard and follow the instructions</li>
+        <li>Run WebStorm</li>
+        <li>When prompted, enter this User Name and License Key into the registration dialog:
+            <pre>
+
+User Name:
+Ithaca College
+
+License Key:
+===== LICENSE BEGIN =====
+491513-25112013
+00001ZePTsKtnjzD02o3ZdZtymHkfb
+xikuVPebWgm"X"dRbrgoDUW"wuXO1M
+BICqjhpO5uLA9LfC4ohT8ebRkLnhQn
+===== LICENSE END =====
+            </pre>
+    </ol>
+
+    <h2>Import Settings</h2>
+    <ol>
+        <li>Run WebStorm</li>
+        <li>From the intro screen choose "Configure" and then "Import Settings" (note, if you don't see the intro screen like in the images below, but you do see a project screen, choose "Close Project" from the "File" menu): <br>
+            <img src="select_configure_settings.png" style="width: 348px; height: 246px" alt="configure">
+            <img src="select_import_settings.png" style="width: 348px; height: 246px" alt="import settings">
+        </li>
+        <li>Select the <a href="webstorm_settings.jar">webstorm_settings.jar</a> file for importing and allow WebStorm to restart</li>
+    </ol>
+
+
+    <h2>Create a Project for Comp105</h2>
+    <ol>
+        <li>From the intro screen choose "Create New Project": <br>
+            <img src="select_new_project.png" style="width: 348px; height: 246px" alt="select new project">
+        </li>
+        <li>Enter "Comp105" as the project name and use the default project location: <br>
+            <img src="create_new_project.png" style="width: 285px; height: 84px" alt="create new project">
+        </li>
+        <li>You should see a project screen similar to this: <br>
+            <img src="new_project.png" style="width: 455px; height: 258px" alt="new project">
+        </li>
+    </ol>
+
+    <a href="change_password.html">Old Change Your Password Notes (Mac only)</a>
+
+
+    <h2>Configure Deployment Server</h2>
+    <ol>
+        <li>Go to the "Preferences..." menu item (under WebStorm menu on Mac, "Settings" under File menu on Windows)</li>
+        <li>Select "Deployment" and you will see the comp105 server listed</li>
+    </ol>
+
+    <h3>Set up the Connection</h3>
+    <ul>
+        <li>Enter your username and password. If you are on a public computer, don't select "Save Password". <br>
+            <img src="pref_deploy_credentials.png" style="width: 473px; height: 320px" alt="deployment credentials">
+        </li>
+    </ul>
+    <ol>
+        <li>Click the "Autodetect" button, which should put your site directory into the "Root path" field.</li>
+        <li>Add "/public_html" after your site directory.</li>
+        <li>Add your username at the end of the "Web server root
+            URL". <br>
+            <img src="pref_deploy_directories.png" style="width: 473px; height: 320px"
+                 alt="deployment directories">
+        </li>
+    </ol>
+
+    <h3>Set up the Mappings</h3>
+    <ol>
+        <li>Select the "Mappings" tab <br>
+            <img src="pref_deploy_mappings.png" style="width: 473px; height: 320px" alt="deployment mappings">
+        </li>
+        <li>Click "Use this server as default"</li>
+        <li>Select your project directory as the "Local path". (Clicking on the "..." button to the right of the Local Path field should get you the right folder.)</li>
+        <li>Put "/" as the "Deployment path on server..." and "Web path on server..." <br>
+            <img src="pref_deploy_mappings_done.png" style="width: 473px; height: 320px" alt="deployment mappings done">
+        </li>
+    </ol>
+
+    <h3>Confirm Server Configuration</h3>
+    <ul>
+        <li>Go to the menu item Tools <span class="glyphicon glyphicon-arrow-right"></span> Deployment <span class="glyphicon glyphicon-arrow-right"></span> Browse Remote Host</li>
+        <li>You should see a panel on the right open up and indicate that it is connecting to the server.</li>
+        <li>If your public_html directory shows up in that panel, you are done.</li>
+        <li>If there are problems, WebStorm will indicate the nature of the problem and you should read the instructions it provides on how to correct the issue.</li>
+    </ul>
+
+</div>
+
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-45913423-1', 'comp105ithaca.com');
+    ga('send', 'pageview');
+
+</script>
+</body>
+</html>

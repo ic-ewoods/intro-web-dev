@@ -1,0 +1,20 @@
+org.jetbrains.plugins.haml
+hg4idea
+Git4Idea
+Karma
+PerforceDirectPlugin
+Dart
+CVS
+com.jetbrains.lang.ejs
+org.coffeescript
+com.jetbrains.plugins.jade
+org.jetbrains.plugins.stylus
+org.jetbrains.plugins.sass
+com.dmarcotte.handlebars
+XSLT-Debugger
+org.jetbrains.plugins.github
+JSTestDriver Plugin
+com.intellij.jsp
+com.jetbrains.plugins.asp
+NodeJS
+org.jetbrains.plugins.less

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>CompSci 105: A First Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery.min.js"></script>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+    <script src="https://netdna.bootstrapcdn.com/bootstrap/latest/js/bootstrap.min.js"></script>
+
+    <!-- HTML5 Shim and Respond.js IE6 - IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <style>
+        body {
+            padding-top: 50px;
+        }
+        dl dt:not(:first-child) {
+            margin-top: 1em;
+        }
+    </style>
+</head>
+
+<body>
+<div id="page" class="container">
+
+    <h1>A First Page</h1>
+
+    <h2>Topics</h2>
+
+    <ul>
+        <li>Web Pages on the Internet</li>
+        <li>Comp105 Web Server</li>
+        <li>Your Web Page on the Internet</li>
+        <li>Hello, World!</li>
+        <li>Development Tools</li>
+    </ul>
+
+    <h2>Resources</h2>
+    <dl class="well">
+        <dt><span class="glyphicon glyphicon-download"></span> Download Homework</dt>
+        <dd><a href="../resources/hw2_hello.zip">hw2_hello.zip</a></dd>
+        <dt><span class="glyphicon glyphicon-download"></span> Install WebStorm</dt>
+        <dd><a href="../resources/webstorm_setup/">WebStorm Project Setup</a></dd>
+    </dl>
+
+    <h2><a data-toggle="collapse" data-parent="page" href="#homework">Homework</a></h2>
+
+    <dl id="homework" class="well collapse">
+        <dt><span class="glyphicon glyphicon-book"></span> Reading</dt>
+        <dd>Chapter 1: Structure</dd>
+        <dt><span class="glyphicon glyphicon-file"></span> Assignment 2</dt>
+        <dd>Hello, World!</dd>
+    </dl>
+
+</div>
+
+
+<!-- Fixed navbar -->
+<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">Intro to Website Development</a>
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li class="active dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Class Notes <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="intro.html">Introductions</a></li>
+                        <li><a href="first_page.html">A First Page</a></li>
+                        <li role="presentation" class="divider"></li>
+                        <li role="presentation" class="dropdown-header">HTML Fundamentals</li>
+                        <li><a href="/class_notes/html_basics/structure.html">Structure</a></li>
+                        <li><a href="/class_notes/html_basics/text.html">Text</a></li>
+                        <li><a href="/class_notes/html_basics/lists.html">Lists</a></li>
+                        <li><a href="/class_notes/html_basics/links.html">Links</a></li>
+                        <li><a href="/class_notes/html_basics/images.html">Images</a></li>
+                        <li role="presentation" class="divider"></li>
+                        <li role="presentation" class="dropdown-header">CSS Fundamentals</li>
+                        <li><a href="/class_notes/css_basics/intro.html">Introduction</a></li>
+                        <li><a href="/class_notes/css_basics/styles.html">Standard Styles</a></li>
+                        <li role="presentation" class="divider"></li>
+                        <li role="presentation" class="dropdown-header">Layout</li>
+                        <li><a href="/class_notes/layout/design.html">Design</a></li>
+                        <li><a href="/class_notes/layout/template.html">Using a Template</a></li>
+                        <li role="presentation" class="divider"></li>
+                        <li><a href="/class_notes/midterm/index.html">Mid-Term Project</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-45913423-1', 'comp105ithaca.com');
+    ga('send', 'pageview');
+
+</script>
+</body>
+</html>

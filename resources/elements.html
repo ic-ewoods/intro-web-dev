@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>CompSci 105: Structure of  HTML Elements</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery.min.js"></script>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+    <script src="https://netdna.bootstrapcdn.com/bootstrap/latest/js/bootstrap.min.js"></script>
+
+    <!-- HTML5 Shim and Respond.js IE6 - IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <style>
+        dl dt:not(:first-child) {
+            margin-top: 1em;
+        }
+
+        li img,
+        li pre {
+            margin: 5px;
+        }
+
+        li pre {
+            padding-left: 3em;
+        }
+    </style>
+</head>
+<body>
+<div id="page" class="container">
+
+
+    <h1>Structure of  HTML Elements</h1>
+
+    <p>Most elements only belong in certain places within the structure of an HTML document. This guide tries to help make that clear.</p>
+
+    <h2>Sections</h2>
+    <p>Sections are for grouping text containers. Don't put text directly in them.</p>
+    <ul>
+        <li>body</li>
+        <li>section</li>
+        <li>article</li>
+        <li>nav</li>
+        <li>header</li>
+        <li>footer</li>
+    </ul>
+
+    <h2>Text containers</h2>
+    <p>If you want to add text, make sure it's in one of these.</p>
+    <ul>
+        <li>h1..h6</li>
+        <li>p</li>
+        <li>li (only inside an ol or ul)</li>
+        <li>dt, dd (only inside a dl)</li>
+        <li>blockquote</li>
+        <li>div</li>
+    </ul>
+
+    <h2>Special text containers</h2>
+    <p>These have special constraints</p>
+    <ul>
+        <li>li, dd, blockquote, div - can contain other text containers</li>
+        <li>hr - empty, so it has no text content</li>
+        <li>ol, ul - direct children should only be li elements</li>
+        <li>dl - direct children should only be dt and dd elements</li>
+    </ul>
+
+    <h2>Text elements</h2>
+    <p>Inside a text container, you can also add this markup.</p>
+    <ul>
+        <li>b / strong</li>
+        <li>i / em</li>
+        <li>sup, sub</li>
+        <li>abbr</li>
+        <li>br</li>
+        <li>a</li>
+        <li>span</li>
+        <li>img</li>
+    </ul>
+
+    <h2>Embedded content</h2>
+    <p>There are several kinds of embedded content can be used inside text containers and text elements, but they can also be outside of text containers. Frequently these kinds of elements will still be within a general purpose div container.</p>
+    <ul>
+        <li>img</li>
+        <li>iframe</li>
+        <li>embed</li>
+    </ul>
+
+</div>
+
+
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-45913423-1', 'comp105ithaca.com');
+    ga('send', 'pageview');
+
+</script>
+</body>
+</html>
