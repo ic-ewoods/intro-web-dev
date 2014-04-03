@@ -12,13 +12,22 @@
     <script src="js/html5shiv.js"></script>
     <![endif]-->
 
+    <script src="jquery.js"></script>
+    <script src="jquery.sticky.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#sticker").sticky({topSpacing:0});
+        });
+    </script>
+
+
 </head>
 <body>
 <div id="page">
 
     <header>
 
-        <nav>
+        <nav id="sticker">
             <ul>
                 <li><a href="#">Attorneys</a></li>
                 <li><a href="#">Practice Areas</a></li>
